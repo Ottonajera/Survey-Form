@@ -1,0 +1,213 @@
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">MUSIC FORM</h1>
+      <p id="description" class="description text-center">
+        We like to know what is your favorite kind of music.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>What is your favorite style of music?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select style</option>
+          <option value="student">Hip-Hop</option>
+          <option value="job">Pop</option>
+          <option value="learner">Reggaeton</option>
+          <option value="preferNo">Rock</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Which platform do you use?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Spotify</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Apple Music</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Youtube Music</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Who do you think is the most listend artist?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an artist</option>
+          <option value="drake">Drake</option>
+          <option value="bad_bunny">Bad Bunny</option>
+          <option value="kanye_west">Kanye West</option>
+          <option value="justin_bieber">Justin Bieber</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Who is your favorite artist?
+          <span class="clue">(you can choose more than 1)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Drake</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Bad Bunny</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            class="input-checkbox"
+          />Kanye West</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Ariana Grande</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="open-source-community"
+            type="checkbox"
+            class="input-checkbox"
+          />Justin Bieber</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="gitter-help-rooms"
+            type="checkbox"
+            class="input-checkbox"
+          />Travis Scott</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Taylor Swift</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="city-meetups"
+            type="checkbox"
+            class="input-checkbox"
+          />Harry Styles</Style></label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="wiki"
+            type="checkbox"
+            class="input-checkbox"
+          />Anuel</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="forum"
+            type="checkbox"
+            class="input-checkbox"
+          />Kendrick Lamar</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="additional-courses"
+            type="checkbox"
+            class="input-checkbox"
+          />Adele</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>What do you think the world of the music needs?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <link rel="stylesheet" href="survey.css">
